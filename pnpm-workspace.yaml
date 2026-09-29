@@ -1,0 +1,25 @@
+packages:
+  - .
+
+allowBuilds:
+  esbuild: false
+  protobufjs: false
+
+blockExoticSubdeps: true
+
+minimumReleaseAge: 10080 # 7 days in minutes
+
+minimumReleaseAgeExclude:
+  - pnpm@12.8.1
+  - '@aws-sdk/client-bedrock-runtime@3.1142.0'
+  - '@aws-sdk/token-providers@3.1142.0'
+  - '@modelcontextprotocol/sdk@1.31.0'
+  - '@smithy/signature-v4@5.7.4'
+  - '@types/node@26.6.3'
+
+overrides:
+  semver: '>=7'
+
+strictPeerDependencies: false
+
+trustPolicy: no-downgrade

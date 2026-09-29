@@ -1,0 +1,45 @@
+import { defineConfig } from 'oxlint';
+
+export default defineConfig({
+  categories: {
+    correctness: 'warn',
+  },
+  plugins: ['typescript', 'unicorn', 'oxc'],
+  env: {
+    builtin: true,
+  },
+  ignorePatterns: [
+    'node_modules',
+    '.pnp',
+    '**/.pnp.js',
+    'coverage',
+    '.next/',
+    'out/',
+    'build',
+    '**/.DS_Store',
+    '**/*.pem',
+    '**/npm-debug.log*',
+    '**/yarn-debug.log*',
+    '**/yarn-error.log*',
+    '**/.env*.local',
+    '**/.vercel',
+    '**/*.tsbuildinfo',
+    '**/next-env.d.ts',
+    '**/.env.local',
+    '!**/.env.local.example',
+    '**/storybook-static',
+    '**/.output',
+    '**/.vinxi',
+    '**/dist',
+    '**/*.d.ts',
+    '*.{js,jsx}',
+    'src/tsconfig.json',
+    'src/stories',
+    '**/*.css',
+    'node_modules/**/*',
+    'dist',
+  ],
+  rules: {
+    'eslint/no-unused-vars': 'error',
+  },
+});
