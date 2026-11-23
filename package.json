@@ -13,20 +13,20 @@
     "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
-    "@strands-agents/sdk": "^1.24.0",
+    "@strands-agents/sdk": "^1.25.0",
     "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
-    "oxfmt": "^0.77.0",
-    "oxlint": "^1.92.0",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.21.0",
+      "version": "12.23.0",
       "onFail": "download"
     },
     "runtime": {
@@ -35,5 +35,5 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.21.0"
+  "packageManager": "pnpm@12.23.0"
 }
